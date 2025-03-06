@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Eléctrica Charly</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h5>CONTÁCTANOS</h5>
+    <p class="intro-text">¿Tienes alguna duda o pregunta? ¡Estamos aquí para ayudarte! Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+    <form id="contactForm" onsubmit="return validarFormulario()">
+        <div class="form-section">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre completo" required>
+        </div>
+
+        <div class="form-section">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Tu correo electrónico" required>
+        </div>
+
+        <div class="form-section">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Cuéntanos tu duda o comentario..." required></textarea>
+        </div>
+        <div class="form-section terms">
+            <input type="checkbox" name="aceptar_terminos" id="aceptar_terminos" required>
+            <label for="aceptar_terminos"> Acepto los términos y condiciones de Eléctrica Charly.</label>
+        </div>
+
+        <div class="cta-button">
+            <input type="submit" value="Enviar Mensaje">
+        </div>
+    </form>
+
+    <div class="cta-button1">
+        <a href="index.html">Visita nuestra página</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

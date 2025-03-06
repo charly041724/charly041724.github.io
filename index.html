@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELÉCTRICA CHARLY</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ELECTRICA CHARLY</h1>
+        <img src="LOGO2.jpg" alt="Logo">
+    </header>
+
+    <nav>
+        <a href="Descargar productos.pdf">Descargar catálogo productos</a>
+        <a href="https://www.truper.com/CatVigente/" target="_blank">Manual online</a>
+        <a href="ubicación.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <figure>
+        <img src="oferta.jpeg" alt="Oferta" width="300" height="300">
+        
+    </figure>
+
+    <div class="container">
+        <article>
+            <h1><em><mark>Productos</mark></em></h1>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="productos">
+                        <!-- Aquí se agregarán los productos dinámicamente -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="carrito">
+                        <h2><u>Carrito</u></h2>
+                        <ul class="carrito-lista">
+                            <!-- Aquí se agregarán los productos en el carrito -->
+                        </ul>
+                        <div class="carrito-total">
+                            Total: $<span id="total">0</span>
+                            <button onclick="window.location.href='comprar.html';">Comprar</button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <aside>
+            <img src="promo.jpg" alt="Promo" width="300" height="300">     
+        </aside>
+    </div>
+    <img src="servicio.jpg" alt="servicio" id="imagen-servicio" width="300" height="400">
+
+    <div id="contenedor1">
+        <h3>Tienda de iluminación, Herramientas, Equipos, Ferretería</h3>
+        <p>Con un enfoque en la calidad y el servicio al cliente, proporcionando todo lo necesario para llevar a cabo trabajos de electricidad, iluminación y plomería.</p>
+    </div>
+
+    <div id="contenedor2">
+        <h3>En plomería encontrarás:</h3>
+        <ul>
+            <li><i>Tubos de PVC</li>
+            <li>CPVC</li>
+            <li>Conexiones hidráulicas</li>
+            <li>Conexiones de cobre</li>
+            <li>Llaves de paso</li>
+            <li><s>Mangueras</li></s></i>
+        </ul>
+        
+        <img src="trabajos.jpg" alt="Imagen de plomería" id="imagen-plomeria">
+        <audio src="audio1.mp3" controls loop></audio>
+        <video controls autoplay width="400" height="600">
+            <source src="publicidad.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Eléctrica Charly | Todos los derechos reservados</p>
+            <h7>¡Síguenos!</h7>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/17SZzygn6s/?mibextid=wwXIfr" target="_blank">
+                    <img src="icom1.jpg" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@charlycharly5638?_t=ZM-8uG1MCsd9wk&_r=1" target="_blank">
+                    <img src="icom3.png" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/electricacharly9?igsh=MTJyYXdjaGZoM3Q1bw==" target="_blank">
+                    <img src="icom2.jpg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

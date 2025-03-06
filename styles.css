@@ -1,0 +1,428 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Georgia', serif;
+}
+h3{
+    font-weight: bold;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    background: black;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 999;
+}
+nav a {
+    color: yellow;
+    padding: 10px;
+}
+article, aside {
+    position: relative;
+    top: 150px;
+    margin-bottom: 50px;
+}
+article {
+    background: #fff;
+    width: 80%;
+}
+aside {
+    background: #808080;
+    width: 20%;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(83, 137, 238);
+    z-index: 1000;
+}
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0066cc;
+}
+label {
+    font-weight: bold;
+    color: #003366;
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #0066cc;
+    font-size: 1rem;
+    color: #333;
+}
+input[type="submit"], input[type="reset"] {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #004b99;
+}
+.cta-button a {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+.cta-button1 {
+    background-color: #9fcefd;
+    position: absolute;
+    top: 540px;
+    right: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+.cta-button a:hover {
+    background-color: #004b99;
+}
+.terms {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+.terms a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+.terms a:hover {
+    text-decoration: underline;
+}
+.form-section input[type="checkbox"] {
+    display: none;
+}
+.form-section label[for="aceptar_terminos"] {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+.form-section label[for="aceptar_terminos"]:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #0066cc;
+    background-color: #fff;
+}
+.form-section input[type="checkbox"]:checked + label[for="aceptar_terminos"]:before {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.producto {
+    width: 48%;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+article .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+article .row > .col-md-8,
+article .row > .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+article .row > .col-md-8 {
+    order: 1;
+}
+article .row > .col-md-4 {
+    order: 2;
+}
+.carrito {
+    border: 1px solid #343a40;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.carrito:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}   
+
+.carrito-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.carrito-lista li button.eliminar {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.carrito-total {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.carrito-total button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 10px -110px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: -110px; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.carrito-lista li {
+    transition: background-color 0.3s ease;
+}
+.carrito-lista li:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    display: inline-block;
+    margin-right: 20px;
+}
+#contenedor1 {
+    background: yellow;
+    width: 90%;
+    height: 150px;
+    margin-top: 220px;
+    
+}
+#contenedor2 {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #2584f0;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    max-height: 450px;
+}
+#imagen-plomeria {
+    position: relative; 
+    top: -250px;
+    left: 50px; 
+    width: 30%;  
+    height: auto;
+}
+
+
+h5 {
+    grid-column: span 2;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+h5 {
+    grid-column: span 2;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.intro-text {
+    text-align: center;
+  
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    color: #555;
+}
+#contenedor2 ul li {
+    background-color: #E1F5FE;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 570px;
+    margin-left: -650px; 
+}
+
+ul li:hover {
+    background-color: #81D4FA;
+}
+#contenedor2 img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+#contenedor2 audio {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto;
+    border-radius: 50px;
+    background-color: #0f0f0f;
+    padding: 10px;
+    margin-left: -360px; 
+}
+#contenedor2 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.video-audio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#imagen-servicio {
+    width: 100%;
+    max-width: 290px;
+    float: right;
+    position: relative;
+    top: -2000px;
+}
+figure img {
+    position: relative;
+    top: 250px;
+    right: -5px;
+    float: right;
+    margin-left: 50px;
+}
+video {
+    position: relative;
+    top: -4500px;
+    right: -5px;
+    float: right;
+    margin-left: 950px;
+    width: 300px;
+    height: auto;
+}
+aside img {
+    position: absolute;
+    top: -700px;
+    right: -1000px;
+}
+#map {
+    height: 100vh;
+    width: 70%;
+    float: left;
+}
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    background: #f4f4f4;
+    float: left;
+    padding: 20px;
+}
+#marker-info {
+    margin-top: 20p;
+}
+h2, p {
+    text-align: left
+   
+}
+.footer-content h7 {
+    padding-right: 30px;
+    font-weight: bold;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content p {
+    flex: 1;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a img {
+    width: 25px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social-icons a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+
+
+
